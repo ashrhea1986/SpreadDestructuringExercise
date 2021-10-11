@@ -13,7 +13,8 @@ const starWarsShows = [
 // 1c 
 const disneyPlusShows = [
     ...mcuShows,
-    ...starWarsShows
+    ...starWarsShows,
+    "Monsters at Work"
 ];
 
 // 1d
@@ -35,7 +36,7 @@ const amazonPrimeMovies = {
 const streamingMovies = {
     ...amazonPrimeMovies,
     ...netflixMovies, 
-    musical: "Hamilton",
+    musical: "Hamilton"
 };
 
 // 2d
@@ -91,8 +92,12 @@ const all = [
     ...bonus["second"],
     ...bonus["third"]
 ];
+console.log(all);
 
 // 5b 
-const [one, two, three, four, five, six, seven, eight, nine] = all;
-
-console.log(one);
+// const [one, two, three, four, five, six, seven, eight, nine] = all;
+const {first, second, third} = bonus;
+const [one, two, three] = first;
+const [four, five, six] = second;
+const [seven, eight, nine] = third;
+console.log(one, two, three, four, five, six, seven, eight,nine);
